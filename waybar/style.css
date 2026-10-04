@@ -1,0 +1,43 @@
+* {
+    font-family: "IosevkaTerm Nerd Font", monospace;
+    font-size: 14px;
+}
+
+window#waybar {
+    background-color: #262a2b; /* Dark slate */
+    color: #f4f1ea; /* Cat fur off-white */
+}
+
+#workspaces button {
+    padding: 0 12px;
+    color: #899396; /* Muted text for inactive workspaces */
+    background: transparent;
+    border: none;
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
+#workspaces button:hover {
+    background: rgba(244, 241, 234, 0.1); /* Subtle cream hover */
+}
+
+#workspaces button.focused {
+    color: #bc8f65; /* Cardboard brown accent */
+    font-weight: bold;
+}
+
+#workspaces button.urgent {
+    color: #d49a37; /* Amber cat eye accent */
+}
+
+#mode, #window, #clock, #battery, #network, #pulseaudio, #tray {
+    padding: 0 12px;
+}
+
+#battery.warning {
+    color: #d49a37; /* Amber warning */
+}
+
+#battery.critical {
+    color: #a85d40; /* Muted reddish-brown for critical */
+}

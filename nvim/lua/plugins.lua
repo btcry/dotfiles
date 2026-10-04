@@ -23,14 +23,17 @@ require("lazy").setup({
   { "lewis6991/gitsigns.nvim",             config = true },
 
   -- Comments
-  { "numToStr/Comment.nvim",               config = true },
-
+  { "numToStr/Comment.nvim",               opts = {} },
   -- Treesitter
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate"
   },
-
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    opts = {},
+  },
   -- Telescope
   { "nvim-lua/plenary.nvim" },
   { "nvim-telescope/telescope.nvim" },
